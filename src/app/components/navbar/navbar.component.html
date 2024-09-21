@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <span>My Dashboard</span>
+  
+    <span class="spacer"></span>
+  
+    <!-- Avatar with dropdown -->
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <img src="https://via.placeholder.com/40" alt="avatar" class="avatar">
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="avatarClick()">Logout</button>
+    </mat-menu>
+  </mat-toolbar>
+  
